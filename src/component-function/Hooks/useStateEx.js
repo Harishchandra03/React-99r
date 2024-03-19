@@ -20,7 +20,8 @@ const UseStateExample = () => {
 
    //This function is to reset the value
    const reset=()=>{
-     setCounter(0)
+     setCounter(0
+        )
    }
 return (
     <>

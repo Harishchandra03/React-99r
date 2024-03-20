@@ -1,21 +1,26 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 
 
-
-
-
-const UsesateEx3 =()=>{
-    const[fruits,setFruits]=useState(["Apple","Mango","Banana"])
-    return(
+const UseEffectEx3 = () => {
+      const[X,setX]=useState(null)
+      const[Y,setY]=useState(null)
+    useEffect(() => {
+        window.addEventListener("mousemove", (event) => {
+            return (
+               setX(event.screenX),
+               setY(event.screenY)
+            )
+        })
+    }, [])
+    return (
         <>
-        <h2>Fruits List</h2>
-        <ol>
-        {
-            fruits.map(eachfruit=><li>{eachfruit}</li>)
-        }
-        </ol>
+            <h1>Use Effect example for Event Listreners</h1>
+            <h2>X-Axis {X}</h2>
+            <h2>Y-axis {Y}</h2>
         </>
     )
 }
-export default UsesateEx3
+export default UseEffectEx3
+
+

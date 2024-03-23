@@ -10,14 +10,16 @@ import UseStateExample2 from "./component-function/Hooks/useState/UseStateEx2";
 import UsesateEx3 from "./component-function/Hooks/useState/useStateEx3";
 import ControlledComponent from "./component-function/Hooks/forms/controlledcompo";
 import UseEffectEx3 from "./component-function/Hooks/useEffect/useEffectEx3";
+import NavigationComponent from "./component-function/Navigation/navigation";
 
 
 
 function App() {
   return (
     <>
-    <UseEffectEx3/>
-     </>
+  
+    <NavigationComponent/>
+    </>
   );
 }
 
